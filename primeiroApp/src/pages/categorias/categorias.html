@@ -7,6 +7,11 @@
 <ion-header>
 
   <ion-navbar>
+    
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    
     <ion-title>Categorias</ion-title>
   </ion-navbar>
 
@@ -14,5 +19,11 @@
 
 
 <ion-content padding>
-
+  <ion-content>
+    <ion-item-group>
+      <ion-item-divider color="light">A</ion-item-divider>
+      <ion-item (click)="navProdutos()">Eletrônicos</ion-item>
+      <ion-item (click)="navProdutos()">Móveis</ion-item>
+    </ion-item-group>
+  </ion-content>
 </ion-content>
