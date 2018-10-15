@@ -15,14 +15,13 @@
 
 <ion-content padding>
   <ion-card>
-    <img src="https://cdn.technolec.co.uk/media/catalog/product/cache/1/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/1/_/1_184_64.jpg"/>
+    <img src="../../assets/imgs/{{produto.imagem}}"/>
     <ion-card-content>
       <ion-card-title>
-        Caterspilar S-60
+        {{produto.nome}}
         </ion-card-title>
       <p>
-        R$ 2.589,00
-      </p>
+        {{produto.preco | currency:'BRL':true:'1.2-2'}}</p>
     </ion-card-content>
   </ion-card>
 </ion-content>
